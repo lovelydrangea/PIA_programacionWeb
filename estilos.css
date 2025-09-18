@@ -9,8 +9,8 @@ body {
   border-color: rgb(0, 0, 0); /* Color del borde del botón */
 }
 .navbar-toggler{
-    background-color: white;
-    border-color: black;
+    background-color: black;
+    border-color: white;
 }
 .navbar.fixed-top{
     background-color:rgb(112, 66, 20);
