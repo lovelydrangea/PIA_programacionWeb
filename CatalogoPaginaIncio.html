@@ -1,71 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="estilos.css">
-    <link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet'>
-    <title>Bibliotequero</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="estilos.css">
+  <link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet'>
+  <title>Bibliotequero</title>
 </head>
 
 <body>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4">Sidebar</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Customers
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
+  <!-- Navbar superior -->
+  <nav id="sidebar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Logo + nombre -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="Logo/Logito.png" alt="Logo Bibliotequero" width="40" height="40" class="me-2">
+        <span>Bibliotequero</span>
       </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
+
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBibliotequero" aria-controls="menuBibliotequero" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="menuBibliotequero">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">📚 Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">⚡ Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">🛒 Crear Publicaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📦 Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">👥 Clientes</a>
+          </li>
+        </ul>
+
+        <!-- Usuario -->
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" 
+             id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" 
+                 class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">Nuevo proyecto...</a></li>
+            <li><a class="dropdown-item" href="#">Configuración</a></li>
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
+
+  <!-- Contenido principal con espacio para el navbar -->
+<main class="container" style="margin-top: 80px;">
+  <h1 class="mb-4">Catálogo de Libros 📚</h1>
+
+  <!-- Aquí se insertarán las cards dinámicamente -->
+  <div id="libros" class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Las cards se cargan con llamadaApi() -->
   </div>
-    
+</main>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
 </body>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </html>
