@@ -8,3 +8,15 @@ body {
   background-color: rgb(112, 66, 20); /* Color de fondo del botón */
   border-color: rgb(0, 0, 0); /* Color del borde del botón */
 }
+.navbar-toggler{
+    background-color: white;
+    border-color: black;
+}
+.navbar.fixed-top{
+    background-color:rgb(112, 66, 20);
+}
+.blockquote.text-white.p-3{
+background-color: rgb(190, 138, 98);
+border-radius: 10px;
+}
+
