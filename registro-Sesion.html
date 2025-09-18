@@ -25,20 +25,18 @@
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bibliotequero</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <!--Solamente la parte al abrir el icono del offcanvas para poder separarlo-->
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
                 <a class="nav-link active text-black" aria-current="page" href="#">Bienvenida</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-black" href="#">Catalogo</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Registro o Iniciar Sesion
+                Iniciar Sesion
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="registro-Sesion.html">Registrarse</a></li>
+                
                 <li><a class="dropdown-item" href="Inicio-Sesion.html">Iniciar Sesion</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">Sobre Nosotros como empresa...</a></li>
@@ -53,5 +51,139 @@
         </div>
     </div>
     </nav>
+
+
+    <!--Formulario para registrini-->
+    <div class="row mt-8">
+        <!-- Columna del formulario -->
+        <div class="col-4">
+            <div class="card p-4 shadow offset-sm-1">
+            <form>
+                <!-- Nombre -->
+                <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                </div>
+
+                <!-- Usuario -->
+                <div class="mb-3">
+                <label for="usuario" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" id="usuario" placeholder="Escribe tu usuario">
+                </div>
+
+                <!-- Fecha de nacimiento -->
+                <div class="mb-3">
+                <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fechaNacimiento">
+                </div>
+
+                <!-- Correo -->
+                <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password">
+                </div>
+
+                <!-- Botón -->
+                <button type="submit" class="btn btn-primary w-100">Crear cuenta</button>
+            </form>
+            </div>
+        </div>
+
+        <!-- Columna de la foto -->
+        <div class="col-3">
+            <div class="card p-4 shadow text-center">
+            <label for="fotoPerfil" class="form-label">Foto de perfil</label>
+            <img id="preview" src="https://via.placeholder.com/150" alt="Foto de perfil" class="img-fluid rounded-circle mb-3" >
+            <input class="form-control" type="file" id="fotoPerfil" accept="image/*" onchange="previuWalafoto(event)">
+            </div>
+            <div id="frasesSlider1" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="8000">
+            <div class="carousel-inner">
+
+                <!-- Frase 1 -->
+                <div class="carousel-item active">
+                <blockquote class="blockquote text-white p-1">
+                    <p>"Vale la pena volver a empezar, una y mil veces, mientras uno esté vivo. Porque incluso en las manos más pequeñas y cansadas, late una esperanza invencible".</p>
+                    <footer class="blockquote-footer text-white">Gabriel Garcia Marquez</footer>
+                </blockquote>
+                </div>
+
+                <!-- Frase 2 -->
+                <div class="carousel-item">
+                <blockquote class="blockquote text-white p-1">
+                    <p>"El escritor escribe su libro para explicarse a sí mismo lo que no se puede explicar".</p>
+                    <footer class="blockquote-footer text-white">Jorge Luis Borges</footer>
+                </blockquote>
+                </div>
+
+                <div class="carousel-item">
+                <blockquote class="blockquote text-white p-1">
+                    <p>“Si el conocimiento puede crear problemas, no es con la ignorancia con lo que podremos resolverlos”.</p>
+                    <footer class="blockquote-footer text-white">Isaac Asimov</footer>
+                </blockquote>
+                </div>
+                
+                <div class="carousel-item">
+                <blockquote class="blockquote text-white p-1">
+                    <p>“Los libros se respetan usándolos, no dejándolos en paz”.</p>
+                    <footer class="blockquote-footer text-white">Umberto Eco</footer>
+                </blockquote>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+<div class="col-3">
+  <div id="frasesSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+
+      <!-- Frase 1 -->
+      <div class="carousel-item active">
+        <blockquote class="blockquote text-white p-1" >
+          <p>"Hay que dormir con los ojos abiertos, hay que soñar con las manos… hay que soñar en voz alta, hay que cantar hasta que el canto eche raíces, troncos, ramas, ramas, pájaros, astros…"</p>
+          <footer class="blockquote-footer text-white">Octavio Paz</footer>
+        </blockquote>
+      </div>
+
+      <!-- Frase 2 -->
+      <div class="carousel-item">
+        <blockquote class="blockquote text-white p-1" >
+          <p>"Todo escritor que crea es un mentiroso; la literatura es mentira, pero de esa mentira sale una recreación de la realidad; recrear la realidad es, pues, uno de los principios fundamentales de la creación."</p>
+          <footer class="blockquote-footer text-white">Juan Rulfo</footer>
+        </blockquote>
+      </div>
+
+      <!-- Frase 3 -->
+      <div class="carousel-item">
+        <blockquote class="blockquote text-white p-1" >
+          <p>"Al trato de amor, hallo diamante y soy diamante al que de amor me trata."</p>
+          <footer class="blockquote-footer text-white">Sor Juana Inés de la Cruz</footer>
+        </blockquote>
+      </div>
+
+      <!-- Frase 4 -->
+      <div class="carousel-item">
+        <blockquote class="blockquote text-white p-1">
+          <p>"Viajar, dormir, enamorarse son tres invitaciones a lo mismo. Tres modos de irse a lugares que no siempre entendemos."</p>
+          <footer class="blockquote-footer text-white">Ángeles Mastretta</footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</div>
+        
+
+
+
   </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
 </html>
