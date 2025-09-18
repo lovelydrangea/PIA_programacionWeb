@@ -1,0 +1,10 @@
+body {
+
+  background-color: rgb(190, 138, 98); /* Color de fondo */
+  padding-top: 70px; /* Ajusta según la altura de tu navbar */
+  font-family: 'Oranienbaum'; /* Fuente por defecto */
+}
+#button {
+  background-color: rgb(112, 66, 20); /* Color de fondo del botón */
+  border-color: rgb(0, 0, 0); /* Color del borde del botón */
+}
