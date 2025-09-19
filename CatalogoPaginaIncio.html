@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
   <link rel="stylesheet" href="estilos.css">
-  <link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
   <title>Bibliotequero</title>
 </head>
 
 <body>
   <!-- Navbar superior -->
-  <nav id="sidebar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <!-- Logo + nombre -->
-      <a class="navbar-brand d-flex align-items-center" href="/">
+      <a class="navbar-brand d-flex align-items-center" href="WelcomeIn.html">
         <img src="Logo/Logito.png" alt="Logo Bibliotequero" width="40" height="40" class="me-2">
         <span>Bibliotequero</span>
       </a>
@@ -31,27 +31,28 @@
             <a class="nav-link active" aria-current="page" href="#">📚 Catálogo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">⚡ Dashboard</a>
+            <a class="nav-link" href="#">⚡ Mi Feed</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">🛒 Crear Publicaciones</a>
+            <a class="nav-link" href="#">✒️ Crear Publicaciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">📦 Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">👥 Clientes</a>
+            <!--Barra de busqueda -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar libro..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
           </li>
         </ul>
 
         <!-- Usuario -->
         <div class="dropdown">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" 
-             id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="" width="32" height="32" 
-                 class="rounded-circle me-2">
-            <strong>mdo</strong>
-          </a>
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" 
+              id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img id="fotoNavbar" src="https://via.placeholder.com/32" alt="" width="32" height="32" 
+                  class="rounded-circle me-2">
+              <strong>mdo</strong>
+            </a>
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="dropdownUser1">
             <li><a class="dropdown-item" href="#">Nuevo proyecto...</a></li>
             <li><a class="dropdown-item" href="#">Configuración</a></li>
