@@ -1,0 +1,97 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 oct 2025, 23:57:31
+    Author     : luis
+*/
+
+.publicacion-card {
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #6c4c41;
+    margin-bottom: 2rem;
+}
+.publicacion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.usuario-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+.usuario-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #6c4c41;
+}
+.imagen-publicacion {
+    max-height: 500px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.acciones-publicacion {
+    border-top: 1px solid #e9ecef;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+.btn-me-gusta {
+    border: none;
+    background: none;
+    color: #6c757d;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.btn-me-gusta:hover {
+    background-color: #f8f9fa;
+    color: #dc3545;
+}
+.btn-me-gusta.activo {
+    color: #dc3545;
+    background-color: #fff5f5;
+}
+.tiempo-publicacion {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-left: auto;
+}
+.contenido-publicacion {
+    padding: 15px;
+    line-height: 1.6;
+}
+.titulo-publicacion {
+    color: #6c4c41;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.texto-publicacion {
+    white-space: pre-line;
+    color: #495057;
+}
+.badge-cantidad {
+    background-color: #6c4c41;
+    color: white;
+}
+.sin-publicaciones {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+.btn-crear-publicacion {
+    background-color: #6c4c41;
+    border-color: #6c4c41;
+    color: white;
+}
+.btn-crear-publicacion:hover {
+    background-color: #5a3d34;
+    border-color: #5a3d34;
+}

@@ -1,0 +1,237 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 26 oct 2025, 22:05:06
+    Author     : luis
+*/
+
+/* ===========================
+   VARIABLES Y CONFIGURACIÓN GENERAL
+   =========================== */
+
+:root {
+  --color-primary: rgb(112, 66, 20);
+  --color-secondary: rgb(190, 138, 98);
+  --color-accent: #ffc107;
+  --color-light: #f9f2ec;
+  --color-text: #2c2c2c;
+  --color-white: #fff;
+  --color-black: #000;
+  --border-radius: 10px;
+  --transition: all 0.2s ease-in-out;
+}
+
+/* ===========================
+   ESTILOS GENERALES
+   =========================== */
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Oranienbaum', serif;
+  color: var(--color-text);
+  padding-top: 70px; /* espacio para navbar fija */
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* ===========================
+   COMPONENTES DE NAVEGACIÓN
+   =========================== */
+
+.navbar.fixed-top {
+  background-color: var(--color-primary);
+}
+
+.navbar-toggler {
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.navbar-brand span {
+  font-size: 1.3rem;
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: var(--color-white) !important;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+/* ===========================
+   COMPONENTES DE BOTONES
+   =========================== */
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-black);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+.btn-outline-light {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* ===========================
+   COMPONENTES DE TARJETAS
+   =========================== */
+
+.card {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.card-title {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.card-img-top {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* ===========================
+   CORRECCIÓN PARA CARD HEADERS - TEXTO BLANCO
+   =========================== */
+
+.card-header.bg-dark {
+  background-color: var(--color-primary) !important;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-white) !important;
+}
+
+.card-header.bg-dark h5,
+.card-header.bg-dark .h5,
+.card-header.bg-dark .mb-0 {
+  color: var(--color-white) !important;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Asegura que todo el texto en card headers sea blanco */
+.card-header.bg-dark.text-white,
+.card-header.bg-dark.text-white * {
+  color: white !important;
+}
+
+/* ===========================
+   CORRECCIÓN PARA TEXTOS EN CARDS
+   =========================== */
+
+.card-body strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.card-body p {
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* ===========================
+   COMPONENTES DE MODALES
+   =========================== */
+
+.modal-content {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+}
+
+.modal-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.modal-footer .btn-secondary {
+  background-color: #7c5835;
+  border: none;
+}
+
+/* Modal de Préstamo Específico */
+#modalPrestamo .modal-content {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+}
+
+#modalPrestamo .form-label {
+  color: var(--color-primary);
+}
+
+#modalPrestamo .btn-prestar {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+}
+
+#modalPrestamo .btn-prestar:hover {
+  background-color: var(--color-accent);
+  color: var(--color-black);
+}
+
+/* ===========================
+   COMPONENTES ESPECIALES
+   =========================== */
+
+/* Bloques y Citas */
+.blockquote.text-white.p-3 {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  border-left: 5px solid var(--color-primary);
+}
+
+/* Previsualización de Imágenes */
+#preview {
+  max-width: 150px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-black);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+  display: block;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 40px;
+}
