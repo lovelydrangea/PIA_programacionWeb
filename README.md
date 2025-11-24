@@ -52,7 +52,7 @@ El sistema utiliza las siguientes tablas principales:
 | **publicaciones** | Mensajes publicados por los usuarios en el feed. |
 | **prestamos** | Solicitudes de préstamo y su estado (aprobado, rechazado, devuelto). |
 
-El script SQL del proyecto se encuentra en la carpeta `/sql/`.
+El script SQL del proyecto se encuentra en la carpeta `/PIA_programacionWeb/`.
 
 ---
 
